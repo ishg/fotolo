@@ -8,11 +8,6 @@ export default class MyIcon extends Component {
     this.state = props;
   }
   render(){
-    let name = this.state.name;
-    let outline = this.state.outline;
-    let size = this.state.size;
-    let color = this.state.color;
-    
     let iconName = Platform.OS === 'android' ? `md-${this.state.name}` : `ios-${this.state.name}`;
     if (Platform.OS === 'ios' && this.state.outline) {
       iconName = `${iconName}-outline`;
