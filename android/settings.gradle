@@ -1,0 +1,3 @@
+rootProject.name = 'fotolo'
+
+include ':app'
